@@ -1,0 +1,7 @@
+font family : Inter (Regular, semi bold, bold)
+font family : Manrope (semi bold, Bold, Extra bold)
+
+background color : DarkBlue: #000E24, 
+thin blue : #2196F3, Red : #F42C38, gray : #F4F8FF
+
+text color : blue : #00296C, 

@@ -1,0 +1,41 @@
+/* =====
+Fonts
+===== */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&display=swap");
+
+/* =====
+Variables
+===== */
+:root {
+  --text-bg-aqua: #2196f3;
+  --text-darkblue: #00296c;
+  --bg-red: #f42c38;
+  --bg-gray: #f4f8ff;
+  --bg-darkblue: #000e24;
+}
+/* =====
+Global Styles
+===== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+/* =====
+Common Class Styles
+===== */
