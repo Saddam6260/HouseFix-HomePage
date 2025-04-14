@@ -12,12 +12,27 @@ Variables
   --bg-red: #f42c38;
   --bg-gray: #f4f8ff;
   --bg-darkblue: #000e24;
+
+  --fw-m-semibold: 600;
+  --fw-m-bold: 700;
+  --fw-m-extrabold: 800;
+
+  --fw-i-regular: 400;
+  --fw-i-semibold: 600;
+  --fw-i-bold: 700;
 }
+
 /* =====
 Global Styles
 ===== */
-* {
+*,
+*::after,
+*::before {
   box-sizing: border-box;
+}
+
+* {
+  font-family: inherit;
   margin: 0;
   padding: 0;
 }
