@@ -61,8 +61,22 @@ button {
 /* =====
 Common Class Styles
 ===== */
-
 .container {
   width: min(var(--mx-width), 100% - (1rem * 2));
   margin-inline: auto;
+}
+
+@media screen and (min-width: 72em) {
+  .container {
+    width: min(var(--mx-width), 100% - (2rem * 2));
+  }
+}
+
+/* =====
+Header Styles
+===== */
+.topber{
+  background-color: var(--bg-darkblue);
+  color: white;
+  display: none;
 }
