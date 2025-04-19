@@ -22,6 +22,8 @@ Variables
   --fw-i-bold: 700;
 
   --mx-width: 1152px;
+
+  --text-ms-12px: 12px;
 }
 
 /* =====
@@ -61,6 +63,12 @@ button {
 /* =====
 Common Class Styles
 ===== */
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .container {
   width: min(var(--mx-width), 100% - (1rem * 2));
   margin-inline: auto;
@@ -75,8 +83,70 @@ Common Class Styles
 /* =====
 Header Styles
 ===== */
-.topber{
+.topber {
   background-color: var(--bg-darkblue);
   color: white;
+  padding: 0.6125rem 0;
   display: none;
+}
+
+.topber .container {
+  justify-content: space-between;
+}
+
+.email-phone ul {
+  gap: 1.75rem;
+}
+
+.email-phone ul li a {
+  gap: 0.3125rem;
+}
+
+.social-media ul {
+  gap: 0.625rem;
+}
+
+.social-media ul li {
+  width: 1.25rem;
+  height: 1.25rem;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-media ul li a {
+  color: var(--bg-darkblue);
+}
+
+.topber p,
+a {
+  color: white;
+  font-size: var(--text-ms-12px);
+}
+
+/* =====
+Nav Menu
+===== */
+.navber-menu {
+}
+
+/* =====
+768 px
+===== */
+@media screen and (min-width: 48em) {
+  /* Topber */
+  .topber {
+    display: block;
+  }
+}
+
+/* =====
+1280 px 
+===== */
+@media screen and (min-width: 80em) {
+  .email-phone ul {
+    gap: 2rem;
+  }
 }
