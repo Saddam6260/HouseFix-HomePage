@@ -23,7 +23,9 @@ Variables
 
   --mx-width: 1152px;
 
-  --text-ms-12px: 12px;
+  --text-sm-12px: 12px;
+  --text-sm-14px: 14px;
+  --text-common-16px: 16px;
 }
 
 /* =====
@@ -67,6 +69,23 @@ Common Class Styles
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.btn-sm{
+
+}
+
+.btn-medium{
+  font-family: "inter", sans-serif;
+  font-size: var(--text-common-16px);
+  font-weight: var(--fw-i-bold);
+  background-color: var(--text-bg-aqua);
+  padding: 1.125rem 2rem;
+  border-radius: .25rem;
+}
+
+.btn-large{
+
 }
 
 .container {
@@ -118,6 +137,8 @@ Header Styles
 
 .social-media ul li a {
   color: var(--bg-darkblue);
+  font-size: .6125rem;
+  font-weight: var(--fw-m-bold);
 }
 
 .topber p,
@@ -129,7 +150,31 @@ a {
 /* =====
 Nav Menu
 ===== */
-.navber-menu {
+.navber {
+  padding-top: ;
+}
+
+.navber .container {
+  justify-content: space-between;
+}
+
+.navber-menu{
+  display: none;
+}
+
+.navber-menu ul {
+  display: flex;
+}
+
+.navber-menu ul li a, button a{
+  color: var(--text-darkblue);
+  font-size: vat(--text-sm-14px);
+  font-weight: var(--fw-m-semibold);
+}
+
+.navber-toggle a {
+  font-size: 1.5rem;
+  color: var(--text-bg-aqua);
 }
 
 /* =====
@@ -148,5 +193,13 @@ Nav Menu
 @media screen and (min-width: 80em) {
   .email-phone ul {
     gap: 2rem;
+  }
+
+  .navber-menu {
+    display: block;  
+  }
+
+  .navber-toggle {
+    display: none;
   }
 }
