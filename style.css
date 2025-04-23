@@ -65,27 +65,32 @@ button {
 /* =====
 Common Class Styles
 ===== */
+.heading1 {
+  font-family: "Manrope", sans-serif;
+  font-size: 2rem;
+  font-size: clamp(2rem, 1.6666666666666667rem + 1.6666666666666667vw, 3rem);
+}
+
 .flex-center {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.btn-sm{
-
+.btn-sm {
 }
 
-.btn-medium{
+.btn-medium {
   font-family: "inter", sans-serif;
   font-size: var(--text-common-16px);
   font-weight: var(--fw-i-bold);
   background-color: var(--text-bg-aqua);
+  color: white;
   padding: 1.125rem 2rem;
-  border-radius: .25rem;
+  border-radius: 0.25rem;
 }
 
-.btn-large{
-
+.btn-large {
 }
 
 .container {
@@ -137,7 +142,7 @@ Header Styles
 
 .social-media ul li a {
   color: var(--bg-darkblue);
-  font-size: .6125rem;
+  font-size: 0.6125rem;
   font-weight: var(--fw-m-bold);
 }
 
@@ -158,7 +163,7 @@ Nav Menu
   justify-content: space-between;
 }
 
-.navber-menu{
+.navber-menu {
   display: none;
 }
 
@@ -166,7 +171,8 @@ Nav Menu
   display: flex;
 }
 
-.navber-menu ul li a, button a{
+.navber-menu ul li a,
+button a {
   color: var(--text-darkblue);
   font-size: vat(--text-sm-14px);
   font-weight: var(--fw-m-semibold);
@@ -175,6 +181,17 @@ Nav Menu
 .navber-toggle a {
   font-size: 1.5rem;
   color: var(--text-bg-aqua);
+}
+
+/* =====
+Footer 
+===== */
+footer {
+  background-color: var(--bg-darkblue);
+}
+
+footer * {
+  color: white;
 }
 
 /* =====
@@ -196,7 +213,7 @@ Nav Menu
   }
 
   .navber-menu {
-    display: block;  
+    display: block;
   }
 
   .navber-toggle {
