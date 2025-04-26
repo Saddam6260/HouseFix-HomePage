@@ -12,6 +12,7 @@ Variables
   --bg-red: #f42c38;
   --bg-gray: #f4f8ff;
   --bg-darkblue: #000e24;
+  --border-color: #323B50;
 
   --fw-m-semibold: 600;
   --fw-m-bold: 700;
@@ -67,8 +68,8 @@ Common Class Styles
 ===== */
 .heading1 {
   font-family: "Manrope", sans-serif;
-  font-size: 2rem;
-  font-size: clamp(2rem, 1.6666666666666667rem + 1.6666666666666667vw, 3rem);
+  font-size: 2.25rem;
+  font-size: clamp(2.25rem, 1.125rem + 2.34375vw, 3rem);
 }
 
 .flex-center {
@@ -77,7 +78,11 @@ Common Class Styles
   align-items: center;
 }
 
-.btn-sm {
+.btn{
+  font-family: "Inter", sans-serif;
+  font-size: var(--text-common-16px);
+  font-weight: var(--fw-i-bold);
+  color: white;
 }
 
 .btn-medium {
@@ -188,10 +193,31 @@ Footer
 ===== */
 footer {
   background-color: var(--bg-darkblue);
+  padding-top: 80px;
+  padding-bottom: 20px;
 }
 
 footer * {
   color: white;
+}
+
+footer .header-wrap{
+  display: flex;
+  flex-flow: column;
+  row-gap: 40px;
+  align-items: start;
+  border-bottom: 2px solid var(--border-color);
+  padding-bottom: 40px;
+}
+
+footer .heading1{
+  font-weight: bold;
+}
+
+footer .header-wrap button{
+  padding: 14px 32px;
+  background-color: #F42C38;
+  border-radius: 4px;
 }
 
 /* =====
