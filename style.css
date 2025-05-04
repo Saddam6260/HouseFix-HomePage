@@ -72,6 +72,11 @@ Common Class Styles
   font-size: clamp(2.25rem, 1.125rem + 2.34375vw, 3rem);
 }
 
+.heading-s-24{
+  font-family: "Manrope", sans-serif;
+  font-size: 1.5rem;
+}
+
 .flex-center {
   display: flex;
   justify-content: center;
@@ -240,6 +245,27 @@ footer .footer-bottom > div:nth-child(1) {
 footer .footer-bottom > div:nth-child(2) {
   display: flex;
   justify-content: space-between;
+}
+
+.footer-menu-wrap{
+  display: flex;
+  flex-flow: column;
+  row-gap: 40px;
+  border-top: 2px solid var(--border-color);
+  border-bottom: 2px solid var(--border-color);
+  padding: 2.5rem 0;
+}
+
+.footer-menu-wrap ul{
+  display: flex;
+  flex-flow: column;
+  row-gap: 10px;
+}
+
+.footer-menu-wrap ul h4{
+  font-family: "Manrope", sans-serif;
+  font-weight: var(--fw-m-bold);
+  font-size: 1.125rem;
 }
 
 /* =====
